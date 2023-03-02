@@ -1,0 +1,40 @@
+/* :root{scroll-behavior: auto;} */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 5; /* 앞으로 보내기 뒤로 보내기*/
+}
+
+.main-bg {
+    background-color: grey;
+    height: 300px;
+    
+}
+
+#login {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+.navbar-brand{
+    font-size: 25px;
+    transition: all 1s;
+}
+.bar {
+    height: 3px;
+    background-color: rgb(45, 44, 44);
+    width: 10%;
+}
+
+/* .mt-3{
+    visibility: hidden;
+}
+.mt-4{
+    visibility: hidden;
+} */
+
+.form-hide{
+    display: none;
+}
+

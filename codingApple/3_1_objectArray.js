@@ -78,7 +78,17 @@ $('.list').click(function(e){
     탭열기(parseInt(e.target.dataset.id))
 })
 
-var car2 = { name : '소나타', price : [50000, 3000, 4000] } 
+var products = [
+    { id : 0, price : 70000, title : 'Blossom Dress' },
+    { id : 1, price : 50000, title : 'Springfield Shirt' },
+    { id : 2, price : 60000, title : 'Black Monastery' }
+  ];
 
-document.querySelector('#car-name').innerHTML = car2.name
-$('#car-price').html(car2['price'][1]) ;
+for(var i=0; i<3; i++){
+    $('.card-body h5').eq(i).html(products[i]['title']);
+    document.querySelectorAll('.card-body p')[i].innerHTML 
+    // = "가격 : " + products[i]['price'];
+    = `가격 : ${products[i]['price']}` // 백틱기호 안에 문자 쓰고 중간에 ${}로 변수 입력
+}
+
+  
